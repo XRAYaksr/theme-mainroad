@@ -43,6 +43,13 @@ spec:
           label: 具体仓库
           help: "https://github.com/halo-dev/halo 这里填写halo"
           value: theme-mainroad
+    - group: basic
+      label: 基础设置
+      formSchema:
+        - $formkit: attachment
+          name: logo_image
+          label: 网站Logo图片
+          help: 上传网站Logo图片，会显示在网站名称处。若不上传则显示文本。
     - group: bottombar
       label: 底部
       formSchema: 
@@ -56,4 +63,5 @@ spec:
           name: desc
           if: "$get(showBottom).value"
           label: 底部代码
-          value: <div class="container footer__container flex"><div class="footer__copyright">© 2023 Mainroad.<span class="footer__copyright-credits">Power By <a href="https://halo.run/" rel="nofollow noopener"target="_blank">Halo</a> and <a href="https://github.com/liuchangfitcloud/theme-mainroad" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span></div></div>      
+          value: <div class="container footer__container flex"><div class="footer__copyright">© 2023 Mainroad.<span class="footer__copyright-credits">Power By <a href="https://halo.run/" rel="nofollow noopener"target="_blank">Halo</a> and <a href="https://github.com/liuchangfitcloud/theme-mainroad" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span></div></div>   
+          
